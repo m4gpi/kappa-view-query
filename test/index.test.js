@@ -297,15 +297,15 @@ describe('multifeed', (context) => {
         })
 
         core.ready('query', () => {
-          var batch2 = seeds.slice(3, 5)
-          feed2.append(batch2, (err, _) => {
+          var batch1 = seeds.slice(0, 3)
+          feed1.append(batch1, (err, _) => {
             assert.error(err, 'no error')
           })
         })
 
         core.ready('query', () => {
-          var batch1 = seeds.slice(0, 3)
-          feed1.append(batch1, (err, _) => {
+          var batch2 = seeds.slice(3, 5)
+          feed2.append(batch2, (err, _) => {
             assert.error(err, 'no error')
           })
         })
