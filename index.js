@@ -52,9 +52,7 @@ module.exports = function KappaViewQuery (db = memdb(), opts = {}) {
         var streamOpts = Object.assign(__opts, {
           lte: [idx.key, ...__opts.lte],
           gte: [idx.key, ...__opts.gte],
-          keyEncoding,
-          keys: true,
-          values: true
+          keyEncoding
         })
 
         var stream = __opts.live
