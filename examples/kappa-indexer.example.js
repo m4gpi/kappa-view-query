@@ -4,7 +4,7 @@ const multifeed = require('multifeed')
 const hypercore = require('hypercore')
 const ram = require('random-access-memory')
 const collect = require('collect-stream')
-const memdb = require('memdb')
+const memdb = require('level-mem')
 const sub = require('subleveldown')
 
 const Query = require('../')

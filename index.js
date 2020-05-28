@@ -1,5 +1,5 @@
 const through = require('through2')
-const memdb = require('memdb')
+const memdb = require('level-mem')
 const charwise = require('charwise')
 const { EventEmitter } = require('events')
 const debug = require('debug')('kappa-view-query')
